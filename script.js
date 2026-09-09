@@ -1,11 +1,15 @@
 /* =========================================================
    SWIFTSHIP
    Logistics & Delivery Website Template
+   Main JavaScript
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ---------- MOBILE NAVIGATION ---------- */
+
+  /* =======================================================
+     MOBILE NAVIGATION
+     ======================================================= */
 
   const menuToggle = document.querySelector(".menu-toggle");
   const mainNav = document.querySelector(".main-nav");
@@ -29,8 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* Close menu after selecting a page */
-
     mainNav.querySelectorAll("a").forEach((link) => {
 
       link.addEventListener("click", () => {
@@ -52,5 +54,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   }
+
+
+  /* =======================================================
+     QUOTE FORM
+     Frontend-ready form handling
+     ======================================================= */
+
+  const quoteForm = document.getElementById("quoteForm");
+  const formMessage = document.getElementById("formMessage");
+
+  if (quoteForm && formMessage) {
+
+    quoteForm.addEventListener("submit", (event) => {
+
+      event.preventDefault();
+
+      const formData = new FormData(quoteForm);
+
+      const name = formData.get("sender_name");
+      const email = formData.get("email");
+      const service = formData.get("service");
+
+      if (!name || !email || !service) {
+
+        formMessage.textContent =
+          "Please complete all required fields.";
+
+        return;
+      }
+
+
+      formMessage.textContent =
+        "Thank you. Your quote request has been prepared successfully.";
+
+
+      quoteForm.reset();
+
+    });
+
+  }
+
 
 });
