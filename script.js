@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =======================================================
      QUOTE FORM
-     Frontend-ready form handling
      ======================================================= */
 
   const quoteForm = document.getElementById("quoteForm");
@@ -84,16 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-
       formMessage.textContent =
-        "Thank you. Your quote request has been prepared successfully.";
-
-
-      quoteForm.reset();
+        "Your quote request is ready to be submitted.";
 
     });
 
   }
-
 
 });
