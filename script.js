@@ -4,6 +4,27 @@
    Main JavaScript
    ========================================================= */
 
+
+/* =========================================================
+   COMPANY SETTINGS
+   Change these values when customizing the template.
+   ========================================================= */
+
+const SWIFTSHIP_CONFIG = {
+
+  email: "hello@swiftship.com",
+
+  whatsapp: "",
+
+  companyName: "SwiftShip"
+
+};
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
 document.addEventListener("DOMContentLoaded", () => {
 
 
@@ -57,7 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* =======================================================
-     QUOTE FORM
+     REQUEST A QUOTE
+     Opens the customer's configured email application.
      ======================================================= */
 
   const quoteForm = document.getElementById("quoteForm");
@@ -69,11 +91,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       event.preventDefault();
 
+
       const formData = new FormData(quoteForm);
 
-      const name = formData.get("sender_name");
-      const email = formData.get("email");
-      const service = formData.get("service");
+
+      const name =
+        String(formData.get("sender_name") || "").trim();
+
+      const email =
+        String(formData.get("email") || "").trim();
+
+      const service =
+        String(formData.get("service") || "").trim();
+
 
       if (!name || !email || !service) {
 
@@ -81,10 +111,55 @@ document.addEventListener("DOMContentLoaded", () => {
           "Please complete all required fields.";
 
         return;
+
       }
 
+
+      const subject =
+        encodeURIComponent(
+          `${SWIFTSHIP_CONFIG.companyName} Quote Request — ${name}`
+        );
+
+
+      const body =
+        encodeURIComponent(
+
+          `Name: ${name}\n` +
+
+          `Email: ${email}\n` +
+
+          `Phone: ${
+            formData.get("phone") || "Not provided"
+          }\n` +
+
+          `Service: ${service}\n` +
+
+          `Pickup Location: ${
+            formData.get("origin") || "Not provided"
+          }\n` +
+
+          `Destination: ${
+            formData.get("destination") || "Not provided"
+          }\n` +
+
+          `Shipment Details: ${
+            formData.get("shipment_details") || "Not provided"
+          }`
+
+        );
+
+
+      const mailtoLink =
+        `mailto:${SWIFTSHIP_CONFIG.email}` +
+        `?subject=${subject}` +
+        `&body=${body}`;
+
+
+      window.location.href = mailtoLink;
+
+
       formMessage.textContent =
-        "Your quote request is ready to be submitted.";
+        "Your email app is opening with the quote request.";
 
     });
 
