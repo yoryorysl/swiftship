@@ -18,7 +18,6 @@
 
   <!-- HEADER -->
   <header class="site-header">
-
     <div class="container nav-container">
 
       <a href="index.html" class="logo" aria-label="SwiftShip home">
@@ -35,39 +34,34 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-
         <a href="index.html">Home</a>
-
         <a href="about.html">About</a>
-
         <a href="services.html">Services</a>
-
-        <a href="tracking.html" class="active">
-          Tracking
-        </a>
-
+        <a href="tracking.html" class="active">Tracking</a>
         <a href="pricing.html">Pricing</a>
-
         <a href="contact.html">Contact</a>
-
       </nav>
 
     </div>
-
   </header>
 
 
   <main>
 
-    <!-- TRACKING HERO -->
+    <!-- PREMIUM TRACKING HERO -->
+    <section class="tracking-premium-hero">
 
-    <section class="hero page-hero">
+      <div class="tracking-hero-glow tracking-glow-one"></div>
+      <div class="tracking-hero-glow tracking-glow-two"></div>
 
-      <div class="container">
+      <div class="tracking-grid-lines"></div>
 
-        <div class="hero-text">
+      <div class="container tracking-hero-grid">
 
-          <div class="eyebrow">
+        <div class="tracking-hero-copy">
+
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
             SHIPMENT TRACKING
           </div>
 
@@ -77,80 +71,149 @@
           </h1>
 
           <p>
-            Enter a tracking number to access shipment
-            information and delivery progress.
+            Follow your shipment from pickup to destination
+            with a clear, professional tracking experience.
           </p>
 
-        </div>
+          <div class="tracking-hero-points">
 
-      </div>
-
-    </section>
-
-
-    <!-- TRACKING SEARCH -->
-
-    <section class="section tracking-section">
-
-      <div class="container">
-
-        <div class="tracking-box">
-
-          <div class="tracking-heading">
-
-            <span class="section-label">
-              TRACK YOUR PACKAGE
+            <span>
+              <i>✓</i>
+              Real-time visibility
             </span>
 
-            <h2>
-              Enter your tracking number
-            </h2>
+            <span>
+              <i>✓</i>
+              Delivery progress
+            </span>
 
-            <p>
-              Use the tracking number provided by your
-              shipping company.
-            </p>
+            <span>
+              <i>✓</i>
+              Shipment history
+            </span>
 
           </div>
 
+        </div>
 
-          <form
-            id="trackingForm"
-            class="tracking-form"
-          >
 
-            <label for="trackingNumber">
-              Tracking Number
-            </label>
+        <!-- TRACKING DASHBOARD -->
+        <div class="tracking-dashboard-wrap">
 
-            <div class="tracking-input-row">
+          <div class="tracking-dashboard-orbit orbit-track-one"></div>
+          <div class="tracking-dashboard-orbit orbit-track-two"></div>
 
-              <input
-                type="text"
-                id="trackingNumber"
-                name="trackingNumber"
-                placeholder="e.g. SWF-2026-000001"
-                autocomplete="off"
-                required
-              >
+          <div class="tracking-dashboard">
 
-              <button
-                type="submit"
-                class="btn btn-primary"
-              >
-                Track Shipment
-              </button>
+            <div class="tracking-dashboard-top">
+
+              <div>
+                <span class="dashboard-label">
+                  SHIPMENT TRACKER
+                </span>
+
+                <h3>
+                  Track your package
+                </h3>
+              </div>
+
+              <span class="dashboard-live">
+                <i></i>
+                LIVE
+              </span>
 
             </div>
 
-          </form>
+
+            <form id="trackingForm" class="premium-tracking-form">
+
+              <label for="trackingNumber">
+                Tracking Number
+              </label>
+
+              <div class="premium-track-input">
+
+                <span class="input-icon">⌕</span>
+
+                <input
+                  type="text"
+                  id="trackingNumber"
+                  name="trackingNumber"
+                  placeholder="SWF-2026-000001"
+                  autocomplete="off"
+                  required
+                >
+
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary tracking-submit"
+              >
+                Track Shipment
+                <span>→</span>
+              </button>
+
+            </form>
 
 
-          <div
-            id="trackingMessage"
-            class="tracking-message"
-            aria-live="polite"
-          ></div>
+            <div
+              id="trackingMessage"
+              class="premium-tracking-message"
+              aria-live="polite"
+            >
+              Enter your tracking number to view shipment
+              information.
+            </div>
+
+
+            <!-- PREVIEW STATUS -->
+            <div class="tracking-preview">
+
+              <div class="preview-top">
+
+                <div>
+                  <span>EXAMPLE SHIPMENT</span>
+                  <strong>SWF-2026-000001</strong>
+                </div>
+
+                <span class="preview-status">
+                  IN TRANSIT
+                </span>
+
+              </div>
+
+
+              <div class="preview-progress">
+
+                <div class="preview-progress-line">
+                  <span></span>
+                </div>
+
+                <div class="preview-progress-points">
+
+                  <div class="preview-point complete">
+                    <i>✓</i>
+                    <small>Picked Up</small>
+                  </div>
+
+                  <div class="preview-point complete">
+                    <i>✓</i>
+                    <small>In Transit</small>
+                  </div>
+
+                  <div class="preview-point">
+                    <i>○</i>
+                    <small>Delivered</small>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -159,9 +222,8 @@
     </section>
 
 
-    <!-- TRACKING PROCESS -->
-
-    <section class="section tracking-process">
+    <!-- TRACKING EXPERIENCE -->
+    <section class="section tracking-experience">
 
       <div class="container">
 
@@ -170,111 +232,282 @@
           <div>
 
             <span class="section-label">
-              DELIVERY JOURNEY
+              DELIVERY VISIBILITY
             </span>
 
             <h2>
-              From pickup to
-              <span>your door.</span>
+              Every step,
+              <span>clearly presented.</span>
             </h2>
 
           </div>
 
           <p>
-            Give customers a clear view of the stages
-            their shipment passes through.
+            Give customers a simple way to understand where
+            their shipment is and what happens next.
           </p>
 
         </div>
 
 
-        <div class="tracking-timeline">
+        <div class="tracking-feature-grid">
 
-          <div class="timeline-item active">
+          <article class="tracking-feature-card">
 
-            <div class="timeline-number">
-              01
+            <div class="tracking-feature-icon">
+              ◎
             </div>
 
-            <div>
-              <h3>Label Created</h3>
+            <span>01</span>
 
-              <p>
-                Shipment information has been registered
-                and the shipping label has been created.
-              </p>
+            <h3>Shipment Status</h3>
+
+            <p>
+              Clearly display the current stage of a shipment
+              and keep customers informed throughout the journey.
+            </p>
+
+          </article>
+
+
+          <article class="tracking-feature-card featured-track-card">
+
+            <div class="tracking-feature-icon">
+              ↗
             </div>
+
+            <span>02</span>
+
+            <h3>Progress Visibility</h3>
+
+            <p>
+              Present delivery progress through an easy-to-read
+              timeline that customers can understand instantly.
+            </p>
+
+          </article>
+
+
+          <article class="tracking-feature-card">
+
+            <div class="tracking-feature-icon">
+              ◇
+            </div>
+
+            <span>03</span>
+
+            <h3>Delivery History</h3>
+
+            <p>
+              Create a foundation for showing important shipment
+              events from pickup through final delivery.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DELIVERY JOURNEY -->
+    <section class="section tracking-journey-section">
+
+      <div class="container">
+
+        <div class="tracking-journey-panel">
+
+          <div class="journey-glow"></div>
+
+          <div class="journey-heading">
+
+            <span class="section-label">
+              DELIVERY JOURNEY
+            </span>
+
+            <h2>
+              From pickup
+              <span>to your door.</span>
+            </h2>
+
+            <p>
+              A clear shipment journey makes the delivery
+              experience easier to understand.
+            </p>
 
           </div>
 
 
-          <div class="timeline-item">
+          <div class="journey-timeline">
 
-            <div class="timeline-number">
-              02
+            <div class="journey-step active">
+
+              <div class="journey-step-number">
+                01
+              </div>
+
+              <div class="journey-step-content">
+                <strong>Label Created</strong>
+                <span>Shipment registered</span>
+              </div>
+
             </div>
 
-            <div>
-              <h3>Picked Up</h3>
 
-              <p>
-                The shipment has been collected from
-                the sender.
-              </p>
+            <div class="journey-connector">
+              <span></span>
+            </div>
+
+
+            <div class="journey-step active">
+
+              <div class="journey-step-number">
+                02
+              </div>
+
+              <div class="journey-step-content">
+                <strong>Picked Up</strong>
+                <span>Shipment collected</span>
+              </div>
+
+            </div>
+
+
+            <div class="journey-connector">
+              <span></span>
+            </div>
+
+
+            <div class="journey-step current">
+
+              <div class="journey-step-number">
+                03
+              </div>
+
+              <div class="journey-step-content">
+                <strong>In Transit</strong>
+                <span>Shipment moving</span>
+              </div>
+
+            </div>
+
+
+            <div class="journey-connector">
+              <span></span>
+            </div>
+
+
+            <div class="journey-step">
+
+              <div class="journey-step-number">
+                04
+              </div>
+
+              <div class="journey-step-content">
+                <strong>Out for Delivery</strong>
+                <span>Final delivery route</span>
+              </div>
+
+            </div>
+
+
+            <div class="journey-connector">
+              <span></span>
+            </div>
+
+
+            <div class="journey-step">
+
+              <div class="journey-step-number">
+                05
+              </div>
+
+              <div class="journey-step-content">
+                <strong>Delivered</strong>
+                <span>Destination reached</span>
+              </div>
+
             </div>
 
           </div>
 
+        </div>
 
-          <div class="timeline-item">
+      </div>
 
-            <div class="timeline-number">
-              03
-            </div>
+    </section>
 
-            <div>
-              <h3>In Transit</h3>
 
-              <p>
-                The shipment is moving through the
-                delivery network.
-              </p>
-            </div>
+    <!-- TRACKING INFO -->
+    <section class="section tracking-info-section">
+
+      <div class="container">
+
+        <div class="tracking-info-grid">
+
+          <div class="tracking-info-copy">
+
+            <span class="section-label">
+              BUILT FOR VISIBILITY
+            </span>
+
+            <h2>
+              Make every shipment
+              <span>easier to follow.</span>
+            </h2>
+
+            <p>
+              SwiftShip provides a polished tracking interface
+              that can later connect to a real logistics database,
+              shipment management system, or SaaS backend.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary">
+              Contact Support
+              <span>→</span>
+            </a>
 
           </div>
 
 
-          <div class="timeline-item">
+          <div class="tracking-info-card">
 
-            <div class="timeline-number">
-              04
+            <div class="info-card-header">
+
+              <span>
+                TRACKING DATA
+              </span>
+
+              <span class="info-dot"></span>
+
             </div>
 
-            <div>
-              <h3>Out for Delivery</h3>
 
-              <p>
-                The shipment is on its way to the
-                recipient's delivery address.
-              </p>
+            <div class="tracking-data-row">
+              <span>Tracking Number</span>
+              <strong>SWF-2026-000001</strong>
             </div>
 
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-number">
-              05
+            <div class="tracking-data-row">
+              <span>Status</span>
+              <strong>In Transit</strong>
             </div>
 
-            <div>
-              <h3>Delivered</h3>
+            <div class="tracking-data-row">
+              <span>Origin</span>
+              <strong>Pickup Facility</strong>
+            </div>
 
-              <p>
-                The shipment has successfully reached
-                its destination.
-              </p>
+            <div class="tracking-data-row">
+              <span>Destination</span>
+              <strong>Delivery Facility</strong>
+            </div>
+
+            <div class="tracking-data-row">
+              <span>Next Update</span>
+              <strong>Pending</strong>
             </div>
 
           </div>
@@ -287,10 +520,11 @@
 
 
     <!-- CTA -->
+    <section class="tracking-final-cta">
 
-    <section class="cta-section">
+      <div class="tracking-cta-glow"></div>
 
-      <div class="container cta-content">
+      <div class="container tracking-cta-content">
 
         <div>
 
@@ -300,16 +534,19 @@
 
           <h2>
             Can't find your shipment?
-            Talk to the team.
+            <span>We're here to help.</span>
           </h2>
+
+          <p>
+            Give customers a direct path to your support team
+            whenever they need assistance.
+          </p>
 
         </div>
 
-        <a
-          href="contact.html"
-          class="btn btn-light"
-        >
+        <a href="contact.html" class="btn btn-light">
           Contact Support
+          <span>→</span>
         </a>
 
       </div>
@@ -320,7 +557,6 @@
 
 
   <!-- FOOTER -->
-
   <footer class="site-footer">
 
     <div class="container footer-content">
@@ -338,17 +574,12 @@
 
       </div>
 
-
       <div class="footer-links">
 
         <a href="index.html">Home</a>
-
         <a href="about.html">About</a>
-
         <a href="services.html">Services</a>
-
         <a href="pricing.html">Pricing</a>
-
         <a href="contact.html">Contact</a>
 
       </div>
