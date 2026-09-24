@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-title="home_page_title">
 <head>
   <meta charset="UTF-8">
 
@@ -37,146 +37,245 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+
+        <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+        <div class="language-selector">
+          <label for="languageSelect" class="sr-only">Language</label>
+
+          <select id="languageSelect" aria-label="Select language">
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="ar">🇸🇦 العربية</option>
+          </select>
+        </div>
+
       </nav>
 
     </div>
   </header>
 
 
- <!-- HERO -->
-<main>
+  <!-- HERO -->
+  <main>
 
-  <section class="hero hero-premium">
+    <section class="hero hero-premium">
 
-    <div class="hero-glow hero-glow-one"></div>
-    <div class="hero-glow hero-glow-two"></div>
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
 
-    <div class="container hero-content">
+      <div class="container hero-content">
 
-      <div class="hero-text">
+        <div class="hero-text">
 
-        <div class="eyebrow hero-eyebrow">
-          <span class="eyebrow-dot"></span>
-          GLOBAL LOGISTICS • FAST DELIVERY
-        </div>
-
-        <h1>
-          Move what matters.
-          <span>We deliver.</span>
-        </h1>
-
-        <p>
-          Powerful logistics solutions built to move packages,
-          products, and businesses forward — quickly, securely,
-          and with complete visibility.
-        </p>
-
-        <div class="hero-actions">
-
-          <a href="tracking.html" class="btn btn-primary hero-btn">
-            Track Shipment
-            <span>→</span>
-          </a>
-
-          <a href="contact.html" class="btn btn-secondary hero-btn">
-            Get a Quote
-            <span>↗</span>
-          </a>
-
-        </div>
-
-        <div class="hero-trust">
-
-          <div class="trust-item">
-            <strong>24/7</strong>
-            <span>Support</span>
+          <div class="eyebrow hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span data-i18n="home_eyebrow">
+              GLOBAL LOGISTICS • FAST DELIVERY
+            </span>
           </div>
 
-          <div class="trust-divider"></div>
+          <h1 data-i18n="home_hero_title">
+            Move what matters.
+            We deliver.
+          </h1>
 
-          <div class="trust-item">
-            <strong>Global</strong>
-            <span>Delivery</span>
+          <p data-i18n="home_hero_description">
+            Powerful logistics solutions built to move packages,
+            products, and businesses forward — quickly, securely,
+            and with complete visibility.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="tracking.html" class="btn btn-primary hero-btn">
+              <span data-i18n="home_track_shipment">Track Shipment</span>
+              <span>→</span>
+            </a>
+
+            <a href="contact.html" class="btn btn-secondary hero-btn">
+              <span data-i18n="home_get_quote">Get a Quote</span>
+              <span>↗</span>
+            </a>
+
           </div>
 
-          <div class="trust-divider"></div>
+          <div class="hero-trust">
 
-          <div class="trust-item">
-            <strong>Real-Time</strong>
-            <span>Tracking</span>
+            <div class="trust-item">
+              <strong>24/7</strong>
+              <span data-i18n="home_support">Support</span>
+            </div>
+
+            <div class="trust-divider"></div>
+
+            <div class="trust-item">
+              <strong data-i18n="home_global">Global</strong>
+              <span data-i18n="home_delivery">Delivery</span>
+            </div>
+
+            <div class="trust-divider"></div>
+
+            <div class="trust-item">
+              <strong data-i18n="home_real_time">Real-Time</strong>
+              <span data-i18n="home_tracking">Tracking</span>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
 
+        <div
+          class="hero-visual"
+          aria-label="SwiftShip shipment tracking interface"
+        >
 
-      <div class="hero-visual" aria-label="SwiftShip shipment tracking interface">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
 
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
+          <div class="floating-badge badge-top">
 
-        <div class="floating-badge badge-top">
-          <span class="badge-icon">✓</span>
-          <div>
-            <strong>Shipment secured</strong>
-            <small>Protected in transit</small>
-          </div>
-        </div>
-
-        <div class="hero-card hero-dashboard-card">
-
-          <div class="hero-card-top">
+            <span class="badge-icon">✓</span>
 
             <div>
-              <span class="card-kicker">LIVE SHIPMENT</span>
-              <strong>SwiftShip Tracking</strong>
-            </div>
+              <strong data-i18n="home_shipment_secured">
+                Shipment secured
+              </strong>
 
-            <span class="status-pill">
-              <span class="status-dot"></span>
-              In Transit
-            </span>
+              <small data-i18n="home_protected_transit">
+                Protected in transit
+              </small>
+            </div>
 
           </div>
 
 
-          <div class="tracking-route">
+          <div class="hero-card hero-dashboard-card">
 
-            <div class="route-location">
-              <span class="route-marker origin-marker"></span>
+            <div class="hero-card-top">
 
               <div>
-                <small>ORIGIN</small>
-                <strong>Warehouse</strong>
+                <span
+                  class="card-kicker"
+                  data-i18n="home_live_shipment"
+                >
+                  LIVE SHIPMENT
+                </span>
+
+                <strong data-i18n="home_swiftship_tracking">
+                  SwiftShip Tracking
+                </strong>
               </div>
-            </div>
 
+              <span class="status-pill">
 
-            <div class="route-line">
+                <span class="status-dot"></span>
 
-              <span class="route-line-track"></span>
+                <span data-i18n="home_in_transit">
+                  In Transit
+                </span>
 
-              <span class="route-truck">
-                🚚
               </span>
 
             </div>
 
 
-            <div class="route-location destination-location">
+            <div class="tracking-route">
 
-              <span class="route-marker destination-marker"></span>
+              <div class="route-location">
+
+                <span class="route-marker origin-marker"></span>
+
+                <div>
+                  <small data-i18n="home_origin">
+                    ORIGIN
+                  </small>
+
+                  <strong data-i18n="home_warehouse">
+                    Warehouse
+                  </strong>
+                </div>
+
+              </div>
+
+
+              <div class="route-line">
+
+                <span class="route-line-track"></span>
+
+                <span class="route-truck">
+                  🚚
+                </span>
+
+              </div>
+
+
+              <div class="route-location destination-location">
+
+                <span class="route-marker destination-marker"></span>
+
+                <div>
+                  <small data-i18n="home_destination">
+                    DESTINATION
+                  </small>
+
+                  <strong data-i18n="home_final_address">
+                    Final Address
+                  </strong>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="shipment-progress">
+
+              <div class="progress-header">
+
+                <span data-i18n="home_delivery_progress">
+                  Delivery progress
+                </span>
+
+                <strong>78%</strong>
+
+              </div>
+
+              <div class="progress-bar">
+                <span></span>
+              </div>
+
+            </div>
+
+
+            <div class="hero-card-details">
 
               <div>
-                <small>DESTINATION</small>
-                <strong>Final Address</strong>
+                <span data-i18n="home_estimated_delivery">
+                  Estimated delivery
+                </span>
+
+                <strong data-i18n="home_on_schedule">
+                  On schedule
+                </strong>
+              </div>
+
+              <div>
+                <span data-i18n="home_tracking_id">
+                  Tracking ID
+                </span>
+
+                <strong>SS-20481</strong>
               </div>
 
             </div>
@@ -184,53 +283,29 @@
           </div>
 
 
-          <div class="shipment-progress">
+          <div class="floating-badge badge-bottom">
 
-            <div class="progress-header">
-              <span>Delivery progress</span>
-              <strong>78%</strong>
-            </div>
-
-            <div class="progress-bar">
-              <span></span>
-            </div>
-
-          </div>
-
-
-          <div class="hero-card-details">
-
-            <div>
-              <span>Estimated delivery</span>
-              <strong>On schedule</strong>
+            <div class="mini-stat-icon">
+              ↗
             </div>
 
             <div>
-              <span>Tracking ID</span>
-              <strong>SS-20481</strong>
+              <strong data-i18n="home_worldwide">
+                Worldwide
+              </strong>
+
+              <small data-i18n="home_delivery_network">
+                Delivery network
+              </small>
             </div>
 
-          </div>
-
-        </div>
-
-
-        <div class="floating-badge badge-bottom">
-
-          <div class="mini-stat-icon">↗</div>
-
-          <div>
-            <strong>Worldwide</strong>
-            <small>Delivery network</small>
           </div>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
     <!-- SERVICES PREVIEW -->
@@ -239,82 +314,136 @@
       <div class="container">
 
         <div class="section-heading">
-          <div>
-            <span class="section-label">OUR SERVICES</span>
 
-            <h2>
+          <div>
+
+            <span
+              class="section-label"
+              data-i18n="home_services_label"
+            >
+              OUR SERVICES
+            </span>
+
+            <h2 data-i18n="home_services_title">
               Logistics built around
-              <span>your business.</span>
+              your business.
             </h2>
+
           </div>
 
-          <p>
+          <p data-i18n="home_services_description">
             Flexible shipping and delivery solutions for individuals,
             growing businesses, and enterprise operations.
           </p>
+
         </div>
 
 
         <div class="service-grid">
 
           <article class="service-card">
-            <div class="service-icon">01</div>
 
-            <h3>Express Delivery</h3>
+            <div class="service-icon">
+              01
+            </div>
 
-            <p>
+            <h3 data-i18n="home_service_express_title">
+              Express Delivery
+            </h3>
+
+            <p data-i18n="home_service_express_description">
               Fast and dependable delivery solutions when
               time matters most.
             </p>
 
-            <a href="services.html">Explore service →</a>
+            <a
+              href="services.html"
+              data-i18n="home_explore_service"
+            >
+              Explore service →
+            </a>
+
           </article>
 
 
           <article class="service-card">
-            <div class="service-icon">02</div>
 
-            <h3>Worldwide Shipping</h3>
+            <div class="service-icon">
+              02
+            </div>
 
-            <p>
+            <h3 data-i18n="home_service_worldwide_title">
+              Worldwide Shipping
+            </h3>
+
+            <p data-i18n="home_service_worldwide_description">
               Move packages across cities, countries, and
               international destinations.
             </p>
 
-            <a href="services.html">Explore service →</a>
+            <a
+              href="services.html"
+              data-i18n="home_explore_service"
+            >
+              Explore service →
+            </a>
+
           </article>
 
 
           <article class="service-card">
-            <div class="service-icon">03</div>
 
-            <h3>Business Logistics</h3>
+            <div class="service-icon">
+              03
+            </div>
 
-            <p>
+            <h3 data-i18n="home_service_business_title">
+              Business Logistics
+            </h3>
+
+            <p data-i18n="home_service_business_description">
               Reliable logistics support designed to help
               businesses operate efficiently.
             </p>
 
-            <a href="services.html">Explore service →</a>
+            <a
+              href="services.html"
+              data-i18n="home_explore_service"
+            >
+              Explore service →
+            </a>
+
           </article>
 
 
           <article class="service-card">
-            <div class="service-icon">04</div>
 
-            <h3>Shipment Tracking</h3>
+            <div class="service-icon">
+              04
+            </div>
 
-            <p>
+            <h3 data-i18n="home_service_tracking_title">
+              Shipment Tracking
+            </h3>
+
+            <p data-i18n="home_service_tracking_description">
               Give customers visibility from pickup through
               final delivery.
             </p>
 
-            <a href="tracking.html">Track shipment →</a>
+            <a
+              href="tracking.html"
+              data-i18n="home_track_shipment_link"
+            >
+              Track shipment →
+            </a>
+
           </article>
 
         </div>
 
       </div>
+
     </section>
 
 
@@ -324,15 +453,26 @@
       <div class="container cta-content">
 
         <div>
-          <span class="section-label">READY TO SHIP?</span>
 
-          <h2>
+          <span
+            class="section-label"
+            data-i18n="home_cta_label"
+          >
+            READY TO SHIP?
+          </span>
+
+          <h2 data-i18n="home_cta_title">
             Let's move your next
             shipment forward.
           </h2>
+
         </div>
 
-        <a href="contact.html" class="btn btn-light">
+        <a
+          href="contact.html"
+          class="btn btn-light"
+          data-i18n="home_request_quote"
+        >
           Request a Quote
         </a>
 
@@ -349,32 +489,55 @@
     <div class="container footer-content">
 
       <div>
+
         <a href="index.html" class="logo">
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="home_footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
+
       </div>
 
       <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+
+        <a href="about.html" data-i18n="nav_about">
+          About
+        </a>
+
+        <a href="services.html" data-i18n="nav_services">
+          Services
+        </a>
+
+        <a href="tracking.html" data-i18n="nav_tracking">
+          Tracking
+        </a>
+
+        <a href="pricing.html" data-i18n="nav_pricing">
+          Pricing
+        </a>
+
+        <a href="contact.html" data-i18n="nav_contact">
+          Contact
+        </a>
+
       </div>
 
     </div>
 
-    <div class="container footer-bottom">
-      <p>© 2026 SwiftShip. All rights reserved.</p>
 
-      <p>
+    <div class="container footer-bottom">
+
+      <p data-i18n="home_copyright">
+        © 2026 SwiftShip. All rights reserved.
+      </p>
+
+      <p data-i18n="home_template_label">
         Logistics & Delivery Website Template
       </p>
+
     </div>
 
   </footer>
