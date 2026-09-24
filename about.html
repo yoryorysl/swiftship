@@ -9,7 +9,7 @@
     content="Discover SwiftShip, a premium logistics and delivery website template built for modern shipping businesses."
   >
 
-  <title>About — SwiftShip</title>
+  <title data-i18n="about_page_title">About — SwiftShip</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,12 +34,29 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" class="active" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+        <!-- LANGUAGE SELECTOR -->
+        <div class="language-selector">
+          <label for="languageSelect" class="sr-only">
+            Language
+          </label>
+
+          <select id="languageSelect" aria-label="Select language">
+            <option value="en">🇬🇧 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="ar">🇸🇦 العربية</option>
+          </select>
+        </div>
       </nav>
 
     </div>
@@ -63,15 +80,17 @@
 
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            ABOUT SWIFTSHIP
+            <span data-i18n="about_eyebrow">ABOUT SWIFTSHIP</span>
           </div>
 
           <h1>
-            Logistics built to
-            <span>move business forward.</span>
+            <span data-i18n="about_hero_title">Logistics built to</span>
+            <span data-i18n="about_hero_title_highlight">
+              move business forward.
+            </span>
           </h1>
 
-          <p>
+          <p data-i18n="about_hero_description">
             SwiftShip is a premium logistics website template
             designed for courier companies, delivery services,
             freight operators, shipping businesses, and modern
@@ -81,20 +100,23 @@
           <div class="about-hero-actions">
 
             <a href="services.html" class="btn btn-primary">
-              Explore Services
+              <span data-i18n="about_explore_services">
+                Explore Services
+              </span>
               <span>→</span>
             </a>
 
-            <a href="contact.html" class="btn btn-secondary">
+            <a href="contact.html" class="btn btn-secondary"
+              data-i18n="about_get_started">
               Get Started
             </a>
 
           </div>
 
           <div class="about-hero-tags">
-            <span>Flexible</span>
-            <span>Global-ready</span>
-            <span>Scalable</span>
+            <span data-i18n="tag_flexible">Flexible</span>
+            <span data-i18n="tag_global">Global-ready</span>
+            <span data-i18n="tag_scalable">Scalable</span>
           </div>
 
         </div>
@@ -111,18 +133,21 @@
             <div class="operations-top">
 
               <div>
-                <span class="operations-label">
+                <span
+                  class="operations-label"
+                  data-i18n="operations_overview"
+                >
                   OPERATIONS OVERVIEW
                 </span>
 
-                <h3>
+                <h3 data-i18n="moving_with_purpose">
                   Moving with purpose.
                 </h3>
               </div>
 
               <span class="live-indicator">
                 <i></i>
-                LIVE
+                <span data-i18n="live">LIVE</span>
               </span>
 
             </div>
@@ -134,8 +159,10 @@
                 <span class="route-icon">✓</span>
 
                 <div>
-                  <strong>Pickup</strong>
-                  <small>Shipment received</small>
+                  <strong data-i18n="pickup">Pickup</strong>
+                  <small data-i18n="shipment_received">
+                    Shipment received
+                  </small>
                 </div>
               </div>
 
@@ -149,8 +176,10 @@
                 <span class="route-icon">→</span>
 
                 <div>
-                  <strong>In Transit</strong>
-                  <small>On the move</small>
+                  <strong data-i18n="in_transit">In Transit</strong>
+                  <small data-i18n="on_the_move">
+                    On the move
+                  </small>
                 </div>
               </div>
 
@@ -164,8 +193,10 @@
                 <span class="route-icon">○</span>
 
                 <div>
-                  <strong>Delivered</strong>
-                  <small>Destination</small>
+                  <strong data-i18n="delivered">Delivered</strong>
+                  <small data-i18n="destination">
+                    Destination
+                  </small>
                 </div>
               </div>
 
@@ -175,22 +206,22 @@
             <div class="operations-bottom">
 
               <div class="operation-stat">
-                <span>SUPPORT</span>
+                <span data-i18n="support">SUPPORT</span>
                 <strong>24/7</strong>
               </div>
 
               <div class="operation-divider"></div>
 
               <div class="operation-stat">
-                <span>VISIBILITY</span>
-                <strong>Real-Time</strong>
+                <span data-i18n="visibility">VISIBILITY</span>
+                <strong data-i18n="real_time">Real-Time</strong>
               </div>
 
               <div class="operation-divider"></div>
 
               <div class="operation-stat">
-                <span>READY</span>
-                <strong>Global</strong>
+                <span data-i18n="ready">READY</span>
+                <strong data-i18n="global">Global</strong>
               </div>
 
             </div>
@@ -200,18 +231,30 @@
 
           <div class="floating-about-card about-card-top">
             <span class="floating-icon">◈</span>
+
             <div>
-              <strong>Built to Scale</strong>
-              <small>Ready for growth</small>
+              <strong data-i18n="built_to_scale">
+                Built to Scale
+              </strong>
+
+              <small data-i18n="ready_for_growth">
+                Ready for growth
+              </small>
             </div>
           </div>
 
 
           <div class="floating-about-card about-card-bottom">
             <span class="floating-icon">✦</span>
+
             <div>
-              <strong>Customer First</strong>
-              <small>Designed for clarity</small>
+              <strong data-i18n="customer_first">
+                Customer First
+              </strong>
+
+              <small data-i18n="designed_for_clarity">
+                Designed for clarity
+              </small>
             </div>
           </div>
 
@@ -231,27 +274,35 @@
 
           <div>
 
-            <span class="section-label">
+            <span
+              class="section-label"
+              data-i18n="swiftship_approach"
+            >
               THE SWIFTSHIP APPROACH
             </span>
 
             <h2>
-              Professional logistics,
-              <span>without the complexity.</span>
+              <span data-i18n="professional_logistics">
+                Professional logistics,
+              </span>
+
+              <span data-i18n="without_complexity">
+                without the complexity.
+              </span>
             </h2>
 
           </div>
 
           <div class="about-intro-copy">
 
-            <p>
+            <p data-i18n="intro_text_one">
               A logistics website should do more than display
               information. It should communicate trust, make
               services easy to understand, and help customers
               take action.
             </p>
 
-            <p>
+            <p data-i18n="intro_text_two">
               SwiftShip brings those elements together in a
               flexible foundation that can be adapted to different
               logistics businesses, delivery operations, and
@@ -275,17 +326,25 @@
         <div class="section-heading about-section-heading">
 
           <div>
-            <span class="section-label">
+            <span
+              class="section-label"
+              data-i18n="built_around"
+            >
               WHAT IT'S BUILT AROUND
             </span>
 
             <h2>
-              A stronger foundation
-              <span>for modern logistics.</span>
+              <span data-i18n="stronger_foundation">
+                A stronger foundation
+              </span>
+
+              <span data-i18n="modern_logistics">
+                for modern logistics.
+              </span>
             </h2>
           </div>
 
-          <p>
+          <p data-i18n="foundation_description">
             Every part of the experience is designed around
             clarity, flexibility, and long-term growth.
           </p>
@@ -302,9 +361,9 @@
               <span class="premium-card-icon">↗</span>
             </div>
 
-            <h3>Reliable</h3>
+            <h3 data-i18n="reliable">Reliable</h3>
 
-            <p>
+            <p data-i18n="reliable_description">
               Built around clear communication, dependable
               service presentation, and a professional customer
               experience.
@@ -312,7 +371,10 @@
 
             <div class="card-line"></div>
 
-            <span class="card-caption">
+            <span
+              class="card-caption"
+              data-i18n="trust_clarity"
+            >
               TRUST & CLARITY
             </span>
 
@@ -326,9 +388,9 @@
               <span class="premium-card-icon">◇</span>
             </div>
 
-            <h3>Flexible</h3>
+            <h3 data-i18n="flexible">Flexible</h3>
 
-            <p>
+            <p data-i18n="flexible_description">
               Customize the company identity, services, pricing,
               contact information, colors, imagery, and business
               details to fit different brands.
@@ -336,7 +398,10 @@
 
             <div class="card-line"></div>
 
-            <span class="card-caption">
+            <span
+              class="card-caption"
+              data-i18n="easy_customization"
+            >
               EASY CUSTOMIZATION
             </span>
 
@@ -350,9 +415,9 @@
               <span class="premium-card-icon">∞</span>
             </div>
 
-            <h3>Scalable</h3>
+            <h3 data-i18n="scalable">Scalable</h3>
 
-            <p>
+            <p data-i18n="scalable_description">
               Start with a polished website and expand toward
               shipment tracking, customer management, and
               logistics platform functionality.
@@ -360,7 +425,10 @@
 
             <div class="card-line"></div>
 
-            <span class="card-caption">
+            <span
+              class="card-caption"
+              data-i18n="built_for_growth"
+            >
               BUILT FOR GROWTH
             </span>
 
@@ -384,16 +452,24 @@
 
           <div class="capability-content">
 
-            <span class="section-label">
+            <span
+              class="section-label"
+              data-i18n="modern_operations"
+            >
               DESIGNED FOR MODERN OPERATIONS
             </span>
 
             <h2>
-              From first click
-              <span>to final delivery.</span>
+              <span data-i18n="first_click">
+                From first click
+              </span>
+
+              <span data-i18n="final_delivery">
+                to final delivery.
+              </span>
             </h2>
 
-            <p>
+            <p data-i18n="capability_description">
               SwiftShip creates a connected digital experience
               where customers can discover services, request
               quotes, explore pricing, track shipments, and
@@ -402,7 +478,9 @@
             </p>
 
             <a href="tracking.html" class="btn btn-light">
-              Explore Tracking
+              <span data-i18n="explore_tracking">
+                Explore Tracking
+              </span>
               <span>→</span>
             </a>
 
@@ -413,32 +491,40 @@
 
             <div class="flow-item">
               <span class="flow-number">01</span>
-              <strong>Discover</strong>
-              <small>Services & pricing</small>
+              <strong data-i18n="discover">Discover</strong>
+              <small data-i18n="services_pricing">
+                Services & pricing
+              </small>
             </div>
 
             <div class="flow-arrow">→</div>
 
             <div class="flow-item">
               <span class="flow-number">02</span>
-              <strong>Request</strong>
-              <small>Quote or shipment</small>
+              <strong data-i18n="request">Request</strong>
+              <small data-i18n="quote_or_shipment">
+                Quote or shipment
+              </small>
             </div>
 
             <div class="flow-arrow">→</div>
 
             <div class="flow-item">
               <span class="flow-number">03</span>
-              <strong>Track</strong>
-              <small>Shipment visibility</small>
+              <strong data-i18n="track">Track</strong>
+              <small data-i18n="shipment_visibility">
+                Shipment visibility
+              </small>
             </div>
 
             <div class="flow-arrow">→</div>
 
             <div class="flow-item">
               <span class="flow-number">04</span>
-              <strong>Deliver</strong>
-              <small>Complete the journey</small>
+              <strong data-i18n="deliver">Deliver</strong>
+              <small data-i18n="complete_journey">
+                Complete the journey
+              </small>
             </div>
 
           </div>
@@ -457,13 +543,21 @@
 
         <div class="about-stats-heading">
 
-          <span class="section-label">
+          <span
+            class="section-label"
+            data-i18n="foundation"
+          >
             THE FOUNDATION
           </span>
 
           <h2>
-            Ready for the way
-            <span>modern logistics works.</span>
+            <span data-i18n="ready_for_way">
+              Ready for the way
+            </span>
+
+            <span data-i18n="modern_logistics_works">
+              modern logistics works.
+            </span>
           </h2>
 
         </div>
@@ -473,22 +567,30 @@
 
           <div class="about-stat-card">
             <strong>24/7</strong>
-            <span>Service Ready</span>
+            <span data-i18n="service_ready">
+              Service Ready
+            </span>
           </div>
 
           <div class="about-stat-card">
-            <strong>Global</strong>
-            <span>Ready to Adapt</span>
+            <strong data-i18n="global">Global</strong>
+            <span data-i18n="ready_to_adapt">
+              Ready to Adapt
+            </span>
           </div>
 
           <div class="about-stat-card">
-            <strong>Live</strong>
-            <span>Tracking Experience</span>
+            <strong data-i18n="live">Live</strong>
+            <span data-i18n="tracking_experience">
+              Tracking Experience
+            </span>
           </div>
 
           <div class="about-stat-card">
             <strong>∞</strong>
-            <span>Built to Scale</span>
+            <span data-i18n="built_to_scale">
+              Built to Scale
+            </span>
           </div>
 
         </div>
@@ -507,16 +609,24 @@
 
         <div>
 
-          <span class="section-label">
+          <span
+            class="section-label"
+            data-i18n="keep_moving"
+          >
             KEEP MOVING
           </span>
 
           <h2>
-            Give your logistics
-            <span>business a stronger digital presence.</span>
+            <span data-i18n="give_business">
+              Give your logistics
+            </span>
+
+            <span data-i18n="stronger_presence">
+              business a stronger digital presence.
+            </span>
           </h2>
 
-          <p>
+          <p data-i18n="cta_description">
             Explore the SwiftShip experience and see how a
             modern logistics website can bring your services
             together.
@@ -527,11 +637,17 @@
         <div class="about-cta-actions">
 
           <a href="services.html" class="btn btn-light">
-            View Services
+            <span data-i18n="view_services">
+              View Services
+            </span>
             <span>→</span>
           </a>
 
-          <a href="contact.html" class="btn btn-outline-light">
+          <a
+            href="contact.html"
+            class="btn btn-outline-light"
+            data-i18n="get_started"
+          >
             Get Started
           </a>
 
@@ -555,7 +671,7 @@
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
@@ -563,11 +679,11 @@
       </div>
 
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </div>
 
     </div>
@@ -575,11 +691,11 @@
 
     <div class="container footer-bottom">
 
-      <p>
+      <p data-i18n="copyright">
         © 2026 SwiftShip. All rights reserved.
       </p>
 
-      <p>
+      <p data-i18n="template_label">
         Logistics & Delivery Website Template
       </p>
 
