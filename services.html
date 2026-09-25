@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-title="services_page_title">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,29 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" class="active" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </nav>
+
+      <div class="language-selector">
+        <label for="languageSelect" class="sr-only">
+          Select language
+        </label>
+
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">🇬🇧 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="pt">🇵🇹 Português</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="ar">🇸🇦 العربية</option>
+        </select>
+      </div>
 
     </div>
   </header>
@@ -53,7 +69,6 @@
 
       <div class="services-hero-glow services-glow-one"></div>
       <div class="services-hero-glow services-glow-two"></div>
-
       <div class="services-grid-lines"></div>
 
       <div class="container services-hero-grid">
@@ -62,15 +77,15 @@
 
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            LOGISTICS SERVICES
+            <span data-i18n="services_eyebrow">LOGISTICS SERVICES</span>
           </div>
 
-          <h1>
+          <h1 data-i18n-html="services_hero_title_html">
             Solutions that keep
             <span>business moving.</span>
           </h1>
 
-          <p>
+          <p data-i18n="services_hero_description">
             Present a complete range of delivery, courier,
             freight, fulfillment, and shipping services through
             one polished digital experience.
@@ -79,11 +94,11 @@
           <div class="services-hero-actions">
 
             <a href="contact.html" class="btn btn-primary">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
-            <a href="tracking.html" class="btn btn-secondary">
+            <a href="tracking.html" class="btn btn-secondary" data-i18n="track_shipment">
               Track Shipment
             </a>
 
@@ -103,11 +118,11 @@
             <div class="command-top">
 
               <div>
-                <span class="command-label">
+                <span class="command-label" data-i18n="service_network">
                   SERVICE NETWORK
                 </span>
 
-                <h3>
+                <h3 data-i18n-html="services_command_title_html">
                   One platform.
                   <span>Multiple solutions.</span>
                 </h3>
@@ -115,7 +130,7 @@
 
               <div class="command-status">
                 <i></i>
-                READY
+                <span data-i18n="ready">READY</span>
               </div>
 
             </div>
@@ -144,18 +159,18 @@
             <div class="command-stats">
 
               <div>
-                <span>SERVICES</span>
+                <span data-i18n="services_stat">SERVICES</span>
                 <strong>12+</strong>
               </div>
 
               <div>
-                <span>DELIVERY</span>
+                <span data-i18n="delivery_stat">DELIVERY</span>
                 <strong>24/7</strong>
               </div>
 
               <div>
-                <span>REACH</span>
-                <strong>Global</strong>
+                <span data-i18n="reach_stat">REACH</span>
+                <strong data-i18n="global">Global</strong>
               </div>
 
             </div>
@@ -165,12 +180,12 @@
 
           <div class="floating-service-badge badge-one">
             <span>01</span>
-            Same-Day
+            <span data-i18n="same_day">Same-Day</span>
           </div>
 
           <div class="floating-service-badge badge-two">
             <span>09</span>
-            Tracking
+            <span data-i18n="tracking">Tracking</span>
           </div>
 
         </div>
@@ -189,11 +204,11 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="what_we_do">
               WHAT WE DO
             </span>
 
-            <h2>
+            <h2 data-i18n-html="services_intro_title_html">
               Built around the
               <span>entire delivery journey.</span>
             </h2>
@@ -202,7 +217,7 @@
 
           <div class="services-intro-copy">
 
-            <p>
+            <p data-i18n="services_intro_description">
               From the first pickup to the final destination,
               SwiftShip gives logistics businesses a professional
               way to present the services their customers need.
@@ -210,10 +225,10 @@
 
             <div class="service-mini-points">
 
-              <span>✓ Local Delivery</span>
-              <span>✓ Express Shipping</span>
-              <span>✓ Freight & Cargo</span>
-              <span>✓ Global Delivery</span>
+              <span data-i18n="local_delivery">✓ Local Delivery</span>
+              <span data-i18n="express_shipping">✓ Express Shipping</span>
+              <span data-i18n="freight_cargo">✓ Freight & Cargo</span>
+              <span data-i18n="global_delivery">✓ Global Delivery</span>
 
             </div>
 
@@ -235,18 +250,18 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="our_services">
               OUR SERVICES
             </span>
 
-            <h2>
+            <h2 data-i18n-html="services_main_title_html">
               Everything your customers
               <span>need to keep moving.</span>
             </h2>
 
           </div>
 
-          <p>
+          <p data-i18n="services_main_description">
             A flexible service structure that can be customized
             for different logistics and transportation businesses.
           </p>
@@ -265,19 +280,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              🚚
-            </div>
+            <div class="service-card-icon">🚚</div>
 
-            <h3>Same-Day Delivery</h3>
+            <h3 data-i18n="service_01_title">Same-Day Delivery</h3>
 
-            <p>
+            <p data-i18n="service_01_desc">
               Fast local delivery for time-sensitive packages,
               documents, and business orders.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -292,19 +305,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ⚡
-            </div>
+            <div class="service-card-icon">⚡</div>
 
-            <h3>Express Courier</h3>
+            <h3 data-i18n="service_02_title">Express Courier</h3>
 
-            <p>
+            <p data-i18n="service_02_desc">
               Priority courier solutions designed for urgent
               shipments and important deliveries.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -319,19 +330,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ◇
-            </div>
+            <div class="service-card-icon">◇</div>
 
-            <h3>Door-to-Door Delivery</h3>
+            <h3 data-i18n="service_03_title">Door-to-Door Delivery</h3>
 
-            <p>
+            <p data-i18n="service_03_desc">
               Convenient pickup and delivery from the sender's
               location to the final destination.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -346,19 +355,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ⇄
-            </div>
+            <div class="service-card-icon">⇄</div>
 
-            <h3>Interstate Shipping</h3>
+            <h3 data-i18n="service_04_title">Interstate Shipping</h3>
 
-            <p>
+            <p data-i18n="service_04_desc">
               Reliable transportation solutions for shipments
               moving between cities and states.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -373,19 +380,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              🌐
-            </div>
+            <div class="service-card-icon">🌐</div>
 
-            <h3>International Shipping</h3>
+            <h3 data-i18n="service_05_title">International Shipping</h3>
 
-            <p>
+            <p data-i18n="service_05_desc">
               Flexible international shipping for businesses
               serving customers across global markets.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -400,19 +405,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ◫
-            </div>
+            <div class="service-card-icon">◫</div>
 
-            <h3>Corporate Logistics</h3>
+            <h3 data-i18n="service_06_title">Corporate Logistics</h3>
 
-            <p>
+            <p data-i18n="service_06_desc">
               Dedicated logistics solutions for companies
               managing regular shipments and operations.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -427,19 +430,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ▣
-            </div>
+            <div class="service-card-icon">▣</div>
 
-            <h3>Freight & Cargo</h3>
+            <h3 data-i18n="service_07_title">Freight & Cargo</h3>
 
-            <p>
+            <p data-i18n="service_07_desc">
               Transportation support for larger, heavier,
               and more complex commercial shipments.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -454,19 +455,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ◈
-            </div>
+            <div class="service-card-icon">◈</div>
 
-            <h3>E-Commerce Fulfillment</h3>
+            <h3 data-i18n="service_08_title">E-Commerce Fulfillment</h3>
 
-            <p>
+            <p data-i18n="service_08_desc">
               Shipping and fulfillment workflows designed for
               growing online stores and modern businesses.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -481,19 +480,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ◎
-            </div>
+            <div class="service-card-icon">◎</div>
 
-            <h3>Shipment Tracking</h3>
+            <h3 data-i18n="service_09_title">Shipment Tracking</h3>
 
-            <p>
+            <p data-i18n="service_09_desc">
               Give customers a simple way to follow their
               shipment from pickup through delivery.
             </p>
 
             <a href="tracking.html" class="service-card-link">
-              Track shipment
+              <span data-i18n="track_shipment">Track shipment</span>
               <span>→</span>
             </a>
 
@@ -508,19 +505,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ⏱
-            </div>
+            <div class="service-card-icon">⏱</div>
 
-            <h3>Priority Shipping</h3>
+            <h3 data-i18n="service_10_title">Priority Shipping</h3>
 
-            <p>
+            <p data-i18n="service_10_desc">
               Faster transportation options for customers
               who need their shipments delivered sooner.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -535,19 +530,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ✈
-            </div>
+            <div class="service-card-icon">✈</div>
 
-            <h3>Air Freight</h3>
+            <h3 data-i18n="service_11_title">Air Freight</h3>
 
-            <p>
+            <p data-i18n="service_11_desc">
               A foundation for presenting expedited freight
               solutions for time-critical shipments.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -562,19 +555,17 @@
               <span class="service-symbol">↗</span>
             </div>
 
-            <div class="service-card-icon">
-              ✦
-            </div>
+            <div class="service-card-icon">✦</div>
 
-            <h3>Global Door-to-Door</h3>
+            <h3 data-i18n="service_12_title">Global Door-to-Door</h3>
 
-            <p>
+            <p data-i18n="service_12_desc">
               End-to-end international delivery experiences
               for packages moving across borders.
             </p>
 
             <a href="contact.html" class="service-card-link">
-              Request service
+              <span data-i18n="request_service">Request service</span>
               <span>→</span>
             </a>
 
@@ -598,16 +589,16 @@
 
           <div class="process-heading">
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="simple_delivery_flow">
               SIMPLE DELIVERY FLOW
             </span>
 
-            <h2>
+            <h2 data-i18n-html="process_title_html">
               From pickup
               <span>to destination.</span>
             </h2>
 
-            <p>
+            <p data-i18n="process_description">
               Present your logistics workflow in a way customers
               can understand at a glance.
             </p>
@@ -619,32 +610,32 @@
 
             <div class="process-step">
               <span>01</span>
-              <strong>Pickup</strong>
-              <small>Shipment collected</small>
+              <strong data-i18n="pickup">Pickup</strong>
+              <small data-i18n="shipment_collected">Shipment collected</small>
             </div>
 
             <div class="process-connector"></div>
 
             <div class="process-step">
               <span>02</span>
-              <strong>Transit</strong>
-              <small>Shipment moving</small>
+              <strong data-i18n="transit">Transit</strong>
+              <small data-i18n="shipment_moving">Shipment moving</small>
             </div>
 
             <div class="process-connector"></div>
 
             <div class="process-step">
               <span>03</span>
-              <strong>Tracking</strong>
-              <small>Customer visibility</small>
+              <strong data-i18n="tracking">Tracking</strong>
+              <small data-i18n="customer_visibility">Customer visibility</small>
             </div>
 
             <div class="process-connector"></div>
 
             <div class="process-step">
               <span>04</span>
-              <strong>Delivery</strong>
-              <small>Final destination</small>
+              <strong data-i18n="delivery">Delivery</strong>
+              <small data-i18n="final_destination">Final destination</small>
             </div>
 
           </div>
@@ -665,16 +656,16 @@
 
         <div>
 
-          <span class="section-label">
+          <span class="section-label" data-i18n="ready_to_move">
             READY TO MOVE?
           </span>
 
-          <h2>
+          <h2 data-i18n-html="services_cta_title_html">
             Build a logistics experience
             <span>your customers can trust.</span>
           </h2>
 
-          <p>
+          <p data-i18n="services_cta_description">
             Make your services easier to discover, understand,
             and act on.
           </p>
@@ -684,11 +675,11 @@
         <div class="services-cta-actions">
 
           <a href="contact.html" class="btn btn-light">
-            Get a Quote
+            <span data-i18n="get_quote">Get a Quote</span>
             <span>→</span>
           </a>
 
-          <a href="pricing.html" class="btn btn-outline-light">
+          <a href="pricing.html" class="btn btn-outline-light" data-i18n="view_pricing">
             View Pricing
           </a>
 
@@ -712,7 +703,7 @@
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
@@ -721,11 +712,11 @@
 
       <div class="footer-links">
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
 
       </div>
 
@@ -734,11 +725,11 @@
 
     <div class="container footer-bottom">
 
-      <p>
+      <p data-i18n="copyright">
         © 2026 SwiftShip. All rights reserved.
       </p>
 
-      <p>
+      <p data-i18n="template_label">
         Logistics & Delivery Website Template
       </p>
 
