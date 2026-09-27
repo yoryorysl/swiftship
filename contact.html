@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-title="contact_page_title">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,6 @@
 
   <!-- HEADER -->
   <header class="site-header">
-
     <div class="container nav-container">
 
       <a href="index.html" class="logo" aria-label="SwiftShip home">
@@ -36,24 +35,32 @@
 
       <nav class="main-nav" aria-label="Main navigation">
 
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="services.html">Services</a>
-
-        <a href="tracking.html">Tracking</a>
-
-        <a href="pricing.html">Pricing</a>
-
-        <a href="contact.html" class="active">
-          Contact
-        </a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">Contact</a>
 
       </nav>
 
-    </div>
+      <div class="language-selector">
+        <label for="languageSelect" class="sr-only">
+          Select language
+        </label>
 
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">🇬🇧 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="pt">🇵🇹 Português</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="ar">🇸🇦 العربية</option>
+        </select>
+      </div>
+
+    </div>
   </header>
 
 
@@ -73,15 +80,17 @@
 
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            CONTACT • QUOTES • SUPPORT
+            <span data-i18n="contact_eyebrow">
+              CONTACT • QUOTES • SUPPORT
+            </span>
           </div>
 
-          <h1>
+          <h1 data-i18n-html="contact_hero_title_html">
             Let's move your
             <span>next shipment.</span>
           </h1>
 
-          <p>
+          <p data-i18n="contact_hero_description">
             Give customers a clear and professional way to
             request quotes, ask questions, and connect with
             your logistics team.
@@ -90,12 +99,12 @@
           <div class="contact-hero-actions">
 
             <a href="#quote-form" class="btn btn-primary">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
             <a href="#contact-details" class="btn btn-secondary">
-              Contact Details
+              <span data-i18n="contact_details">Contact Details</span>
             </a>
 
           </div>
@@ -105,8 +114,13 @@
             <span class="availability-dot"></span>
 
             <div>
-              <strong>Support whenever customers need it</strong>
-              <small>Customize these details for your business</small>
+              <strong data-i18n="support_anytime">
+                Support whenever customers need it
+              </strong>
+
+              <small data-i18n="customize_contact_details">
+                Customize these details for your business
+              </small>
             </div>
 
           </div>
@@ -125,8 +139,13 @@
             <span class="contact-floating-icon">✉</span>
 
             <div>
-              <strong>Quote Request</strong>
-              <small>Ready to be customized</small>
+              <strong data-i18n="quote_request">
+                Quote Request
+              </strong>
+
+              <small data-i18n="ready_to_customize">
+                Ready to be customized
+              </small>
             </div>
 
           </div>
@@ -137,13 +156,21 @@
             <div class="contact-command-top">
 
               <div>
-                <span>CONTACT CENTER</span>
-                <strong>We're here to help</strong>
+                <span data-i18n="contact_center">
+                  CONTACT CENTER
+                </span>
+
+                <strong data-i18n="were_here_to_help">
+                  We're here to help
+                </strong>
               </div>
 
               <div class="contact-live-status">
                 <i></i>
-                Available
+
+                <span data-i18n="available">
+                  Available
+                </span>
               </div>
 
             </div>
@@ -156,8 +183,13 @@
                 <span class="channel-icon">☎</span>
 
                 <div>
-                  <small>PHONE</small>
-                  <strong>+1 (000) 000-0000</strong>
+                  <small data-i18n="phone">
+                    PHONE
+                  </small>
+
+                  <strong>
+                    +1 (000) 000-0000
+                  </strong>
                 </div>
 
                 <span class="channel-arrow">→</span>
@@ -170,8 +202,13 @@
                 <span class="channel-icon">✉</span>
 
                 <div>
-                  <small>EMAIL</small>
-                  <strong>hello@yourcompany.com</strong>
+                  <small data-i18n="email">
+                    EMAIL
+                  </small>
+
+                  <strong>
+                    hello@yourcompany.com
+                  </strong>
                 </div>
 
                 <span class="channel-arrow">→</span>
@@ -184,8 +221,13 @@
                 <span class="channel-icon">◉</span>
 
                 <div>
-                  <small>SERVICE AREA</small>
-                  <strong>Worldwide / Customizable</strong>
+                  <small data-i18n="service_area">
+                    SERVICE AREA
+                  </small>
+
+                  <strong data-i18n="worldwide_customizable">
+                    Worldwide / Customizable
+                  </strong>
                 </div>
 
                 <span class="channel-arrow">→</span>
@@ -197,9 +239,13 @@
 
             <div class="contact-command-footer">
 
-              <span>SwiftShip Template</span>
+              <span data-i18n="swiftship_template">
+                SwiftShip Template
+              </span>
 
-              <strong>Customize me</strong>
+              <strong data-i18n="customize_me">
+                Customize me
+              </strong>
 
             </div>
 
@@ -211,8 +257,13 @@
             <span class="contact-floating-icon">✓</span>
 
             <div>
-              <strong>Easy to Customize</strong>
-              <small>Replace details with your business info</small>
+              <strong data-i18n="easy_to_customize">
+                Easy to Customize
+              </strong>
+
+              <small data-i18n="replace_business_info">
+                Replace details with your business info
+              </small>
             </div>
 
           </div>
@@ -235,16 +286,16 @@
           <!-- INFORMATION -->
           <div class="premium-contact-info" id="contact-details">
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="get_in_touch">
               GET IN TOUCH
             </span>
 
-            <h2>
+            <h2 data-i18n-html="contact_info_title_html">
               Make it easy for customers
               <span>to reach you.</span>
             </h2>
 
-            <p>
+            <p data-i18n="contact_info_description">
               Replace the sample information below with your
               company's phone number, email address, service
               area, business hours, WhatsApp link, and other
@@ -262,13 +313,15 @@
                 </div>
 
                 <div>
-                  <small>PHONE</small>
+                  <small data-i18n="phone">
+                    PHONE
+                  </small>
 
                   <strong>
                     +1 (000) 000-0000
                   </strong>
 
-                  <span>
+                  <span data-i18n="replace_business_number">
                     Replace with your business number
                   </span>
                 </div>
@@ -283,13 +336,15 @@
                 </div>
 
                 <div>
-                  <small>EMAIL</small>
+                  <small data-i18n="email">
+                    EMAIL
+                  </small>
 
                   <strong>
                     hello@yourcompany.com
                   </strong>
 
-                  <span>
+                  <span data-i18n="replace_business_email">
                     Replace with your business email
                   </span>
                 </div>
@@ -304,13 +359,15 @@
                 </div>
 
                 <div>
-                  <small>SERVICE AREA</small>
+                  <small data-i18n="service_area">
+                    SERVICE AREA
+                  </small>
 
-                  <strong>
+                  <strong data-i18n="worldwide_your_area">
                     Worldwide / Your Service Area
                   </strong>
 
-                  <span>
+                  <span data-i18n="customize_for_business">
                     Customize for your business
                   </span>
                 </div>
@@ -325,13 +382,15 @@
                 </div>
 
                 <div>
-                  <small>BUSINESS HOURS</small>
+                  <small data-i18n="business_hours">
+                    BUSINESS HOURS
+                  </small>
 
-                  <strong>
+                  <strong data-i18n="your_business_hours">
                     Your Business Hours
                   </strong>
 
-                  <span>
+                  <span data-i18n="example_monday_sunday">
                     Example: Monday – Sunday
                   </span>
                 </div>
@@ -343,9 +402,11 @@
 
             <div class="contact-template-note">
 
-              <span>TIP</span>
+              <span data-i18n="tip">
+                TIP
+              </span>
 
-              <p>
+              <p data-i18n="contact_template_tip">
                 Keep your contact information centralized so
                 buyers can quickly customize this template for
                 their own logistics company.
@@ -361,16 +422,16 @@
 
             <div class="premium-form-heading">
 
-              <span class="section-label">
+              <span class="section-label" data-i18n="request_a_quote">
                 REQUEST A QUOTE
               </span>
 
-              <h2>
+              <h2 data-i18n-html="shipment_info_title_html">
                 Tell us about
                 <span>your shipment.</span>
               </h2>
 
-              <p>
+              <p data-i18n="shipment_info_description">
                 Collect the essential shipment information your
                 logistics business needs before preparing a quote.
               </p>
@@ -389,7 +450,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="senderName">
+                  <label for="senderName" data-i18n="your_name">
                     Your Name
                   </label>
 
@@ -398,6 +459,7 @@
                     id="senderName"
                     name="sender_name"
                     placeholder="Full name"
+                    data-i18n-placeholder="full_name"
                     autocomplete="name"
                     required
                   >
@@ -407,7 +469,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="email">
+                  <label for="email" data-i18n="email_address">
                     Email Address
                   </label>
 
@@ -416,6 +478,7 @@
                     id="email"
                     name="email"
                     placeholder="you@example.com"
+                    data-i18n-placeholder="email_placeholder"
                     autocomplete="email"
                     required
                   >
@@ -429,7 +492,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="phone">
+                  <label for="phone" data-i18n="phone_number">
                     Phone Number
                   </label>
 
@@ -446,7 +509,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="service">
+                  <label for="service" data-i18n="service_needed">
                     Service Needed
                   </label>
 
@@ -456,43 +519,43 @@
                     required
                   >
 
-                    <option value="">
+                    <option value="" data-i18n="select_service">
                       Select a service
                     </option>
 
-                    <option value="same-day">
+                    <option value="same-day" data-i18n="same_day">
                       Same-Day Delivery
                     </option>
 
-                    <option value="express">
+                    <option value="express" data-i18n="express_courier">
                       Express Courier
                     </option>
 
-                    <option value="door-to-door">
+                    <option value="door-to-door" data-i18n="door_to_door">
                       Door-to-Door Delivery
                     </option>
 
-                    <option value="interstate">
+                    <option value="interstate" data-i18n="interstate_shipping">
                       Interstate Shipping
                     </option>
 
-                    <option value="international">
+                    <option value="international" data-i18n="international_shipping">
                       International Shipping
                     </option>
 
-                    <option value="freight">
+                    <option value="freight" data-i18n="freight_cargo">
                       Freight & Cargo
                     </option>
 
-                    <option value="corporate">
+                    <option value="corporate" data-i18n="corporate_logistics">
                       Corporate Logistics
                     </option>
 
-                    <option value="fulfillment">
+                    <option value="fulfillment" data-i18n="ecommerce_fulfillment">
                       E-commerce Fulfillment
                     </option>
 
-                    <option value="other">
+                    <option value="other" data-i18n="other">
                       Other
                     </option>
 
@@ -507,7 +570,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="origin">
+                  <label for="origin" data-i18n="pickup_location">
                     Pickup Location
                   </label>
 
@@ -516,6 +579,7 @@
                     id="origin"
                     name="origin"
                     placeholder="City / Country"
+                    data-i18n-placeholder="city_country"
                   >
 
                 </div>
@@ -523,7 +587,7 @@
 
                 <div class="premium-form-group">
 
-                  <label for="destination">
+                  <label for="destination" data-i18n="destination">
                     Destination
                   </label>
 
@@ -532,6 +596,7 @@
                     id="destination"
                     name="destination"
                     placeholder="City / Country"
+                    data-i18n-placeholder="city_country"
                   >
 
                 </div>
@@ -541,7 +606,7 @@
 
               <div class="premium-form-group">
 
-                <label for="shipment">
+                <label for="shipment" data-i18n="shipment_details">
                   Shipment Details
                 </label>
 
@@ -550,6 +615,7 @@
                   name="shipment_details"
                   rows="5"
                   placeholder="Package type, weight, dimensions, quantity, preferred delivery date, or other useful details."
+                  data-i18n-placeholder="shipment_placeholder"
                 ></textarea>
 
               </div>
@@ -559,7 +625,10 @@
                 type="submit"
                 class="btn btn-primary premium-form-submit"
               >
-                Request Shipping Quote
+                <span data-i18n="request_shipping_quote">
+                  Request Shipping Quote
+                </span>
+
                 <span>→</span>
               </button>
 
@@ -590,18 +659,18 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="faq">
               FAQ
             </span>
 
-            <h2>
+            <h2 data-i18n-html="faq_title_html">
               Common shipping
               <span>questions.</span>
             </h2>
 
           </div>
 
-          <p>
+          <p data-i18n="faq_description">
             Give customers useful answers before they contact
             your logistics team.
           </p>
@@ -615,11 +684,13 @@
           <details class="premium-faq-item">
 
             <summary>
-              How are shipping prices calculated?
+              <span data-i18n="faq_prices_question">
+                How are shipping prices calculated?
+              </span>
               <span>+</span>
             </summary>
 
-            <p>
+            <p data-i18n="faq_prices_answer">
               Pricing can be based on shipment weight,
               dimensions, destination, delivery speed,
               shipment type, and additional service requirements.
@@ -631,11 +702,13 @@
           <details class="premium-faq-item">
 
             <summary>
-              Can customers track their shipment?
+              <span data-i18n="faq_tracking_question">
+                Can customers track their shipment?
+              </span>
               <span>+</span>
             </summary>
 
-            <p>
+            <p data-i18n="faq_tracking_answer">
               Yes. The template includes a dedicated tracking
               experience that can later be connected to a real
               shipment database or logistics platform.
@@ -647,11 +720,13 @@
           <details class="premium-faq-item">
 
             <summary>
-              Can international delivery be offered?
+              <span data-i18n="faq_international_question">
+                Can international delivery be offered?
+              </span>
               <span>+</span>
             </summary>
 
-            <p>
+            <p data-i18n="faq_international_answer">
               Yes. International destinations and service levels
               can be configured according to the logistics
               company's actual operating network.
@@ -663,11 +738,13 @@
           <details class="premium-faq-item">
 
             <summary>
-              Can businesses request recurring services?
+              <span data-i18n="faq_recurring_question">
+                Can businesses request recurring services?
+              </span>
               <span>+</span>
             </summary>
 
-            <p>
+            <p data-i18n="faq_recurring_answer">
               Yes. Business customers can request recurring
               delivery, fulfillment, freight, or customized
               logistics services.
@@ -692,16 +769,16 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="swiftship">
               SWIFTSHIP
             </span>
 
-            <h2>
+            <h2 data-i18n-html="contact_cta_title_html">
               Build a contact experience
               <span>your customers trust.</span>
             </h2>
 
-            <p>
+            <p data-i18n="contact_cta_description">
               Replace the sample information with your own
               business details when deploying the template.
             </p>
@@ -709,7 +786,9 @@
           </div>
 
           <a href="#quote-form" class="btn btn-light">
-            Request a Quote
+            <span data-i18n="request_quote">
+              Request a Quote
+            </span>
             <span>→</span>
           </a>
 
@@ -733,7 +812,7 @@
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
@@ -743,17 +822,12 @@
 
       <div class="footer-links">
 
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="services.html">Services</a>
-
-        <a href="tracking.html">Tracking</a>
-
-        <a href="pricing.html">Pricing</a>
-
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
 
       </div>
 
@@ -762,11 +836,11 @@
 
     <div class="container footer-bottom">
 
-      <p>
+      <p data-i18n="copyright">
         © 2026 SwiftShip. All rights reserved.
       </p>
 
-      <p>
+      <p data-i18n="template_label">
         Logistics & Delivery Website Template
       </p>
 
