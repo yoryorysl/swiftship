@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-title="pricing_page_title">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,29 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="pricing.html" class="active">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" class="active" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </nav>
+
+      <div class="language-selector">
+        <label for="languageSelect" class="sr-only">
+          Select language
+        </label>
+
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">🇬🇧 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="pt">🇵🇹 Português</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="ar">🇸🇦 العربية</option>
+        </select>
+      </div>
 
     </div>
   </header>
@@ -53,7 +69,6 @@
 
       <div class="pricing-hero-glow pricing-glow-one"></div>
       <div class="pricing-hero-glow pricing-glow-two"></div>
-
       <div class="pricing-grid-lines"></div>
 
       <div class="container pricing-hero-layout">
@@ -62,15 +77,17 @@
 
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            SIMPLE • FLEXIBLE • SCALABLE
+            <span data-i18n="pricing_eyebrow">
+              SIMPLE • FLEXIBLE • SCALABLE
+            </span>
           </div>
 
-          <h1>
+          <h1 data-i18n-html="pricing_hero_title_html">
             Pricing that moves
             <span>with your shipment.</span>
           </h1>
 
-          <p>
+          <p data-i18n="pricing_hero_description">
             Clear delivery options for everyday shipments,
             priority deliveries, and international logistics —
             with flexible pricing for different shipment needs.
@@ -79,11 +96,11 @@
           <div class="pricing-hero-actions">
 
             <a href="contact.html" class="btn btn-primary">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
-            <a href="services.html" class="btn btn-secondary">
+            <a href="services.html" class="btn btn-secondary" data-i18n="explore_services">
               Explore Services
             </a>
 
@@ -93,21 +110,21 @@
 
             <div>
               <strong>3</strong>
-              <span>Core plans</span>
+              <span data-i18n="core_plans">Core plans</span>
             </div>
 
             <div class="pricing-divider"></div>
 
             <div>
               <strong>24/7</strong>
-              <span>Tracking access</span>
+              <span data-i18n="tracking_access">Tracking access</span>
             </div>
 
             <div class="pricing-divider"></div>
 
             <div>
-              <strong>Global</strong>
-              <span>Delivery options</span>
+              <strong data-i18n="global">Global</strong>
+              <span data-i18n="delivery_options">Delivery options</span>
             </div>
 
           </div>
@@ -123,31 +140,39 @@
 
           <div class="pricing-floating-card pricing-floating-top">
             <span class="floating-icon">↗</span>
+
             <div>
-              <strong>Flexible Rates</strong>
-              <small>Built around shipment needs</small>
+              <strong data-i18n="flexible_rates">Flexible Rates</strong>
+              <small data-i18n="built_around_shipment_needs">
+                Built around shipment needs
+              </small>
             </div>
           </div>
 
           <div class="pricing-dashboard">
 
             <div class="pricing-dashboard-top">
+
               <div>
-                <span class="dashboard-label">DELIVERY ESTIMATE</span>
+                <span class="dashboard-label" data-i18n="delivery_estimate">
+                  DELIVERY ESTIMATE
+                </span>
+
                 <strong>From $25</strong>
               </div>
 
               <span class="dashboard-status">
-                ● Flexible
+                ● <span data-i18n="flexible">Flexible</span>
               </span>
+
             </div>
 
             <div class="pricing-route-line">
 
               <div class="route-point">
                 <span></span>
-                <small>ORIGIN</small>
-                <strong>Pickup</strong>
+                <small data-i18n="origin">ORIGIN</small>
+                <strong data-i18n="pickup">Pickup</strong>
               </div>
 
               <div class="route-track">
@@ -156,8 +181,8 @@
 
               <div class="route-point route-destination">
                 <span></span>
-                <small>DESTINATION</small>
-                <strong>Delivery</strong>
+                <small data-i18n="destination">DESTINATION</small>
+                <strong data-i18n="delivery">Delivery</strong>
               </div>
 
             </div>
@@ -165,13 +190,13 @@
             <div class="pricing-dashboard-bottom">
 
               <div>
-                <small>SERVICE</small>
-                <strong>Standard</strong>
+                <small data-i18n="service">SERVICE</small>
+                <strong data-i18n="standard">Standard</strong>
               </div>
 
               <div>
-                <small>TRACKING</small>
-                <strong>Included</strong>
+                <small data-i18n="tracking">TRACKING</small>
+                <strong data-i18n="included">Included</strong>
               </div>
 
             </div>
@@ -179,11 +204,17 @@
           </div>
 
           <div class="pricing-floating-card pricing-floating-bottom">
+
             <span class="floating-icon">✓</span>
+
             <div>
-              <strong>Quote Ready</strong>
-              <small>Final rate depends on shipment details</small>
+              <strong data-i18n="quote_ready">Quote Ready</strong>
+
+              <small data-i18n="final_rate_depends">
+                Final rate depends on shipment details
+              </small>
             </div>
+
           </div>
 
         </div>
@@ -201,15 +232,17 @@
         <div class="section-heading premium-heading">
 
           <div>
-            <span class="section-label">DELIVERY PLANS</span>
+            <span class="section-label" data-i18n="delivery_plans">
+              DELIVERY PLANS
+            </span>
 
-            <h2>
+            <h2 data-i18n-html="pricing_plans_title_html">
               Choose the service
               <span>that fits.</span>
             </h2>
           </div>
 
-          <p>
+          <p data-i18n="pricing_plans_description">
             Use these plans as a starting point and customize
             the pricing, services, and limits for your logistics
             business.
@@ -228,13 +261,13 @@
 
             <div class="price-card-top">
 
-              <span class="price-card-label">
+              <span class="price-card-label" data-i18n="economy">
                 ECONOMY
               </span>
 
-              <h3>Standard</h3>
+              <h3 data-i18n="standard">Standard</h3>
 
-              <p>
+              <p data-i18n="standard_description">
                 Cost-effective delivery for shipments
                 that are not time-sensitive.
               </p>
@@ -243,11 +276,11 @@
 
             <div class="premium-price">
 
-              <small>From</small>
+              <small data-i18n="from">From</small>
 
               <strong>$25</strong>
 
-              <span>per shipment</span>
+              <span data-i18n="per_shipment">per shipment</span>
 
             </div>
 
@@ -257,28 +290,28 @@
 
               <li>
                 <span>✓</span>
-                Standard handling
+                <span data-i18n="standard_handling">Standard handling</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Shipment tracking
+                <span data-i18n="shipment_tracking">Shipment tracking</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Delivery updates
+                <span data-i18n="delivery_updates">Delivery updates</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Customer support
+                <span data-i18n="customer_support">Customer support</span>
               </li>
 
             </ul>
 
             <a href="contact.html" class="price-card-button">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
@@ -288,7 +321,7 @@
           <!-- EXPRESS -->
           <article class="premium-price-card premium-price-featured">
 
-            <div class="featured-label">
+            <div class="featured-label" data-i18n="most_popular">
               MOST POPULAR
             </div>
 
@@ -296,13 +329,13 @@
 
             <div class="price-card-top">
 
-              <span class="price-card-label">
+              <span class="price-card-label" data-i18n="priority">
                 PRIORITY
               </span>
 
-              <h3>Express</h3>
+              <h3 data-i18n="express">Express</h3>
 
-              <p>
+              <p data-i18n="express_description">
                 Faster delivery for customers who
                 need their shipments sooner.
               </p>
@@ -311,11 +344,11 @@
 
             <div class="premium-price">
 
-              <small>From</small>
+              <small data-i18n="from">From</small>
 
               <strong>$50</strong>
 
-              <span>per shipment</span>
+              <span data-i18n="per_shipment">per shipment</span>
 
             </div>
 
@@ -325,28 +358,28 @@
 
               <li>
                 <span>✓</span>
-                Priority handling
+                <span data-i18n="priority_handling">Priority handling</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Shipment tracking
+                <span data-i18n="shipment_tracking">Shipment tracking</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Delivery updates
+                <span data-i18n="delivery_updates">Delivery updates</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Priority support
+                <span data-i18n="priority_support">Priority support</span>
               </li>
 
             </ul>
 
             <a href="contact.html" class="price-card-button primary-price-button">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
@@ -360,13 +393,13 @@
 
             <div class="price-card-top">
 
-              <span class="price-card-label">
+              <span class="price-card-label" data-i18n="global">
                 GLOBAL
               </span>
 
-              <h3>International</h3>
+              <h3 data-i18n="international">International</h3>
 
-              <p>
+              <p data-i18n="international_description">
                 International shipping solutions for
                 cross-border deliveries.
               </p>
@@ -375,11 +408,11 @@
 
             <div class="premium-price">
 
-              <small>From</small>
+              <small data-i18n="from">From</small>
 
               <strong>$100</strong>
 
-              <span>per shipment</span>
+              <span data-i18n="per_shipment">per shipment</span>
 
             </div>
 
@@ -389,28 +422,30 @@
 
               <li>
                 <span>✓</span>
-                International handling
+                <span data-i18n="international_handling">
+                  International handling
+                </span>
               </li>
 
               <li>
                 <span>✓</span>
-                Shipment tracking
+                <span data-i18n="shipment_tracking">Shipment tracking</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Delivery updates
+                <span data-i18n="delivery_updates">Delivery updates</span>
               </li>
 
               <li>
                 <span>✓</span>
-                Global support
+                <span data-i18n="global_support">Global support</span>
               </li>
 
             </ul>
 
             <a href="contact.html" class="price-card-button">
-              Request a Quote
+              <span data-i18n="request_quote">Request a Quote</span>
               <span>→</span>
             </a>
 
@@ -434,16 +469,16 @@
 
           <div class="custom-panel-content">
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="business_freight_custom">
               BUSINESS • FREIGHT • CUSTOM
             </span>
 
-            <h2>
+            <h2 data-i18n-html="custom_pricing_title_html">
               Need a shipping solution
               <span>built around your operation?</span>
             </h2>
 
-            <p>
+            <p data-i18n="custom_pricing_description">
               Large shipments, recurring deliveries, freight,
               specialized logistics, and business accounts can
               use custom pricing based on shipment requirements.
@@ -451,15 +486,17 @@
 
             <div class="custom-points">
 
-              <span>✓ Recurring shipments</span>
-              <span>✓ Freight & cargo</span>
-              <span>✓ Business logistics</span>
-              <span>✓ Specialized delivery</span>
+              <span data-i18n="recurring_shipments">✓ Recurring shipments</span>
+              <span data-i18n="freight_cargo">✓ Freight & cargo</span>
+              <span data-i18n="business_logistics">✓ Business logistics</span>
+              <span data-i18n="specialized_delivery">✓ Specialized delivery</span>
 
             </div>
 
             <a href="contact.html" class="btn btn-primary">
-              Request Custom Quote
+              <span data-i18n="request_custom_quote">
+                Request Custom Quote
+              </span>
               <span>→</span>
             </a>
 
@@ -473,11 +510,11 @@
 
             <div class="custom-center-card">
 
-              <span>QUOTE</span>
+              <span data-i18n="quote">QUOTE</span>
 
-              <strong>Custom</strong>
+              <strong data-i18n="custom">Custom</strong>
 
-              <small>
+              <small data-i18n="based_on_shipment">
                 Based on your shipment
               </small>
 
@@ -500,15 +537,19 @@
         <div class="section-heading premium-heading">
 
           <div>
-            <span class="section-label">HOW IT WORKS</span>
 
-            <h2>
+            <span class="section-label" data-i18n="how_it_works">
+              HOW IT WORKS
+            </span>
+
+            <h2 data-i18n-html="pricing_process_title_html">
               Your final price is based on
               <span>the shipment.</span>
             </h2>
+
           </div>
 
-          <p>
+          <p data-i18n="pricing_process_description">
             Shipping costs can change depending on the
             characteristics and requirements of each shipment.
           </p>
@@ -519,47 +560,66 @@
         <div class="pricing-factors">
 
           <article class="pricing-factor">
+
             <span>01</span>
+
             <div>
-              <h3>Weight</h3>
-              <p>
+              <h3 data-i18n="weight">Weight</h3>
+
+              <p data-i18n="weight_description">
                 Heavier shipments may require different
                 handling and transportation resources.
               </p>
             </div>
+
           </article>
 
+
           <article class="pricing-factor">
+
             <span>02</span>
+
             <div>
-              <h3>Dimensions</h3>
-              <p>
+              <h3 data-i18n="dimensions">Dimensions</h3>
+
+              <p data-i18n="dimensions_description">
                 Package size can affect available transport
                 space and handling requirements.
               </p>
             </div>
+
           </article>
 
+
           <article class="pricing-factor">
+
             <span>03</span>
+
             <div>
-              <h3>Destination</h3>
-              <p>
+              <h3 data-i18n="destination">Destination</h3>
+
+              <p data-i18n="destination_description">
                 Distance, country, route, and delivery zone
                 can influence the final shipping cost.
               </p>
             </div>
+
           </article>
 
+
           <article class="pricing-factor">
+
             <span>04</span>
+
             <div>
-              <h3>Delivery Speed</h3>
-              <p>
+              <h3 data-i18n="delivery_speed">Delivery Speed</h3>
+
+              <p data-i18n="delivery_speed_description">
                 Standard, express, priority, and other
                 delivery speeds may have different rates.
               </p>
             </div>
+
           </article>
 
         </div>
@@ -579,15 +639,19 @@
           <div class="note-icon">i</div>
 
           <div>
-            <strong>Pricing note</strong>
 
-            <p>
+            <strong data-i18n="pricing_note">
+              Pricing note
+            </strong>
+
+            <p data-i18n="pricing_note_description">
               Displayed prices are starting points for the
               template. Final shipping prices may vary based
               on package weight, dimensions, destination,
               delivery speed, shipment type, and additional
               service requirements.
             </p>
+
           </div>
 
         </div>
@@ -606,16 +670,16 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="ready_to_ship">
               READY TO SHIP?
             </span>
 
-            <h2>
+            <h2 data-i18n-html="pricing_cta_title_html">
               Find the right delivery
               <span>option for your shipment.</span>
             </h2>
 
-            <p>
+            <p data-i18n="pricing_cta_description">
               Tell us what you are shipping and where it needs
               to go. The right service can then be selected for
               the shipment.
@@ -624,7 +688,7 @@
           </div>
 
           <a href="contact.html" class="btn btn-light">
-            Get a Quote
+            <span data-i18n="get_quote">Get a Quote</span>
             <span>→</span>
           </a>
 
@@ -648,7 +712,7 @@
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
@@ -657,12 +721,11 @@
 
       <div class="footer-links">
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="contact.html">Contact</a>
-
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" data-i18n="nav_tracking">Tracking</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </div>
 
     </div>
@@ -670,11 +733,11 @@
 
     <div class="container footer-bottom">
 
-      <p>
+      <p data-i18n="copyright">
         © 2026 SwiftShip. All rights reserved.
       </p>
 
-      <p>
+      <p data-i18n="template_label">
         Logistics & Delivery Website Template
       </p>
 
