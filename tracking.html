@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-title="tracking_page_title">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,29 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="tracking.html" class="active">Tracking</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="tracking.html" class="active" data-i18n="nav_tracking">Tracking</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
       </nav>
+
+      <div class="language-selector">
+        <label for="languageSelect" class="sr-only">
+          Select language
+        </label>
+
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">🇬🇧 English</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="pt">🇵🇹 Português</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="ar">🇸🇦 العربية</option>
+        </select>
+      </div>
 
     </div>
   </header>
@@ -53,7 +69,6 @@
 
       <div class="tracking-hero-glow tracking-glow-one"></div>
       <div class="tracking-hero-glow tracking-glow-two"></div>
-
       <div class="tracking-grid-lines"></div>
 
       <div class="container tracking-hero-grid">
@@ -62,15 +77,15 @@
 
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            SHIPMENT TRACKING
+            <span data-i18n="tracking_eyebrow">SHIPMENT TRACKING</span>
           </div>
 
-          <h1>
+          <h1 data-i18n-html="tracking_hero_title_html">
             Know where your
             <span>shipment stands.</span>
           </h1>
 
-          <p>
+          <p data-i18n="tracking_hero_description">
             Follow your shipment from pickup to destination
             with a clear, professional tracking experience.
           </p>
@@ -79,17 +94,17 @@
 
             <span>
               <i>✓</i>
-              Real-time visibility
+              <span data-i18n="real_time_visibility">Real-time visibility</span>
             </span>
 
             <span>
               <i>✓</i>
-              Delivery progress
+              <span data-i18n="delivery_progress">Delivery progress</span>
             </span>
 
             <span>
               <i>✓</i>
-              Shipment history
+              <span data-i18n="shipment_history">Shipment history</span>
             </span>
 
           </div>
@@ -108,18 +123,18 @@
             <div class="tracking-dashboard-top">
 
               <div>
-                <span class="dashboard-label">
+                <span class="dashboard-label" data-i18n="shipment_tracker">
                   SHIPMENT TRACKER
                 </span>
 
-                <h3>
+                <h3 data-i18n="track_your_package">
                   Track your package
                 </h3>
               </div>
 
               <span class="dashboard-live">
                 <i></i>
-                LIVE
+                <span data-i18n="live">LIVE</span>
               </span>
 
             </div>
@@ -127,7 +142,7 @@
 
             <form id="trackingForm" class="premium-tracking-form">
 
-              <label for="trackingNumber">
+              <label for="trackingNumber" data-i18n="tracking_number">
                 Tracking Number
               </label>
 
@@ -150,7 +165,7 @@
                 type="submit"
                 class="btn btn-primary tracking-submit"
               >
-                Track Shipment
+                <span data-i18n="track_shipment">Track Shipment</span>
                 <span>→</span>
               </button>
 
@@ -161,9 +176,9 @@
               id="trackingMessage"
               class="premium-tracking-message"
               aria-live="polite"
+              data-i18n="tracking_message"
             >
-              Enter your tracking number to view shipment
-              information.
+              Enter your tracking number to view shipment information.
             </div>
 
 
@@ -173,11 +188,11 @@
               <div class="preview-top">
 
                 <div>
-                  <span>EXAMPLE SHIPMENT</span>
+                  <span data-i18n="example_shipment">EXAMPLE SHIPMENT</span>
                   <strong>SWF-2026-000001</strong>
                 </div>
 
-                <span class="preview-status">
+                <span class="preview-status" data-i18n="in_transit">
                   IN TRANSIT
                 </span>
 
@@ -194,17 +209,17 @@
 
                   <div class="preview-point complete">
                     <i>✓</i>
-                    <small>Picked Up</small>
+                    <small data-i18n="picked_up">Picked Up</small>
                   </div>
 
                   <div class="preview-point complete">
                     <i>✓</i>
-                    <small>In Transit</small>
+                    <small data-i18n="in_transit">In Transit</small>
                   </div>
 
                   <div class="preview-point">
                     <i>○</i>
-                    <small>Delivered</small>
+                    <small data-i18n="delivered">Delivered</small>
                   </div>
 
                 </div>
@@ -231,18 +246,18 @@
 
           <div>
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="delivery_visibility">
               DELIVERY VISIBILITY
             </span>
 
-            <h2>
+            <h2 data-i18n-html="tracking_experience_title_html">
               Every step,
               <span>clearly presented.</span>
             </h2>
 
           </div>
 
-          <p>
+          <p data-i18n="tracking_experience_description">
             Give customers a simple way to understand where
             their shipment is and what happens next.
           </p>
@@ -260,9 +275,11 @@
 
             <span>01</span>
 
-            <h3>Shipment Status</h3>
+            <h3 data-i18n="shipment_status">
+              Shipment Status
+            </h3>
 
-            <p>
+            <p data-i18n="shipment_status_description">
               Clearly display the current stage of a shipment
               and keep customers informed throughout the journey.
             </p>
@@ -278,9 +295,11 @@
 
             <span>02</span>
 
-            <h3>Progress Visibility</h3>
+            <h3 data-i18n="progress_visibility">
+              Progress Visibility
+            </h3>
 
-            <p>
+            <p data-i18n="progress_visibility_description">
               Present delivery progress through an easy-to-read
               timeline that customers can understand instantly.
             </p>
@@ -296,9 +315,11 @@
 
             <span>03</span>
 
-            <h3>Delivery History</h3>
+            <h3 data-i18n="delivery_history">
+              Delivery History
+            </h3>
 
-            <p>
+            <p data-i18n="delivery_history_description">
               Create a foundation for showing important shipment
               events from pickup through final delivery.
             </p>
@@ -323,16 +344,16 @@
 
           <div class="journey-heading">
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="delivery_journey">
               DELIVERY JOURNEY
             </span>
 
-            <h2>
+            <h2 data-i18n-html="delivery_journey_title_html">
               From pickup
               <span>to your door.</span>
             </h2>
 
-            <p>
+            <p data-i18n="delivery_journey_description">
               A clear shipment journey makes the delivery
               experience easier to understand.
             </p>
@@ -349,8 +370,8 @@
               </div>
 
               <div class="journey-step-content">
-                <strong>Label Created</strong>
-                <span>Shipment registered</span>
+                <strong data-i18n="label_created">Label Created</strong>
+                <span data-i18n="shipment_registered">Shipment registered</span>
               </div>
 
             </div>
@@ -368,8 +389,8 @@
               </div>
 
               <div class="journey-step-content">
-                <strong>Picked Up</strong>
-                <span>Shipment collected</span>
+                <strong data-i18n="picked_up">Picked Up</strong>
+                <span data-i18n="shipment_collected">Shipment collected</span>
               </div>
 
             </div>
@@ -387,8 +408,8 @@
               </div>
 
               <div class="journey-step-content">
-                <strong>In Transit</strong>
-                <span>Shipment moving</span>
+                <strong data-i18n="in_transit">In Transit</strong>
+                <span data-i18n="shipment_moving">Shipment moving</span>
               </div>
 
             </div>
@@ -406,8 +427,8 @@
               </div>
 
               <div class="journey-step-content">
-                <strong>Out for Delivery</strong>
-                <span>Final delivery route</span>
+                <strong data-i18n="out_for_delivery">Out for Delivery</strong>
+                <span data-i18n="final_delivery_route">Final delivery route</span>
               </div>
 
             </div>
@@ -425,8 +446,8 @@
               </div>
 
               <div class="journey-step-content">
-                <strong>Delivered</strong>
-                <span>Destination reached</span>
+                <strong data-i18n="delivered">Delivered</strong>
+                <span data-i18n="destination_reached">Destination reached</span>
               </div>
 
             </div>
@@ -449,23 +470,23 @@
 
           <div class="tracking-info-copy">
 
-            <span class="section-label">
+            <span class="section-label" data-i18n="built_for_visibility">
               BUILT FOR VISIBILITY
             </span>
 
-            <h2>
+            <h2 data-i18n-html="tracking_info_title_html">
               Make every shipment
               <span>easier to follow.</span>
             </h2>
 
-            <p>
+            <p data-i18n="tracking_info_description">
               SwiftShip provides a polished tracking interface
               that can later connect to a real logistics database,
               shipment management system, or SaaS backend.
             </p>
 
             <a href="contact.html" class="btn btn-primary">
-              Contact Support
+              <span data-i18n="contact_support">Contact Support</span>
               <span>→</span>
             </a>
 
@@ -476,7 +497,7 @@
 
             <div class="info-card-header">
 
-              <span>
+              <span data-i18n="tracking_data">
                 TRACKING DATA
               </span>
 
@@ -486,28 +507,28 @@
 
 
             <div class="tracking-data-row">
-              <span>Tracking Number</span>
+              <span data-i18n="tracking_number">Tracking Number</span>
               <strong>SWF-2026-000001</strong>
             </div>
 
             <div class="tracking-data-row">
-              <span>Status</span>
-              <strong>In Transit</strong>
+              <span data-i18n="status">Status</span>
+              <strong data-i18n="in_transit">In Transit</strong>
             </div>
 
             <div class="tracking-data-row">
-              <span>Origin</span>
-              <strong>Pickup Facility</strong>
+              <span data-i18n="origin">Origin</span>
+              <strong data-i18n="pickup_facility">Pickup Facility</strong>
             </div>
 
             <div class="tracking-data-row">
-              <span>Destination</span>
-              <strong>Delivery Facility</strong>
+              <span data-i18n="destination">Destination</span>
+              <strong data-i18n="delivery_facility">Delivery Facility</strong>
             </div>
 
             <div class="tracking-data-row">
-              <span>Next Update</span>
-              <strong>Pending</strong>
+              <span data-i18n="next_update">Next Update</span>
+              <strong data-i18n="pending">Pending</strong>
             </div>
 
           </div>
@@ -528,16 +549,16 @@
 
         <div>
 
-          <span class="section-label">
+          <span class="section-label" data-i18n="need_help">
             NEED HELP?
           </span>
 
-          <h2>
+          <h2 data-i18n-html="tracking_cta_title_html">
             Can't find your shipment?
             <span>We're here to help.</span>
           </h2>
 
-          <p>
+          <p data-i18n="tracking_cta_description">
             Give customers a direct path to your support team
             whenever they need assistance.
           </p>
@@ -545,7 +566,7 @@
         </div>
 
         <a href="contact.html" class="btn btn-light">
-          Contact Support
+          <span data-i18n="contact_support">Contact Support</span>
           <span>→</span>
         </a>
 
@@ -567,7 +588,7 @@
           Swift<span>Ship</span>
         </a>
 
-        <p>
+        <p data-i18n="footer_description">
           Modern logistics and delivery solutions
           for businesses worldwide.
         </p>
@@ -576,11 +597,11 @@
 
       <div class="footer-links">
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="pricing.html" data-i18n="nav_pricing">Pricing</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
 
       </div>
 
@@ -589,11 +610,11 @@
 
     <div class="container footer-bottom">
 
-      <p>
+      <p data-i18n="copyright">
         © 2026 SwiftShip. All rights reserved.
       </p>
 
-      <p>
+      <p data-i18n="template_label">
         Logistics & Delivery Website Template
       </p>
 
